@@ -3,49 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company Name - Contact Us</title>
+    <title>Power Control Technique - Home</title>
     <style>
         /* Modern Minimalist Styling 2026 */
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
-        header { background: #2c3e50; color: #fff; padding: 4rem 1rem; text-align: center; }
-        header h1 { margin: 0; font-size: 2.5rem; }
-        .container { max-width: 800px; margin: 2rem auto; padding: 2rem; background: #fff; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-        .contact-info { margin-bottom: 2rem; }
-        .contact-info h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 0.5rem; }
-        .contact-item { margin: 1rem 0; font-size: 1.1rem; }
-        .contact-item strong { color: #34495e; }
+        /* Header & Navigation */
+        header { background: linear-gradient(135deg,#2c3e50 0%,#34495e 100%); color: #fff; padding: 2.5rem 1rem; }
+        .nav { display:flex; align-items:center; justify-content:space-between; max-width:1100px; margin:0 auto; }
+        .logo { font-weight:700; font-size:1.25rem; color:#fff; text-decoration:none; }
+        nav a { color: #ecf0f1; text-decoration:none; margin-left:1rem; font-weight:600; }
+        .hero { text-align:center; padding:2rem 1rem 1rem; }
+        .hero h1 { margin:0; font-size:2rem; }
+        .hero p { margin:0.5rem 0 1rem; color:#e8eef6; }
+        .cta { display:inline-block; background:#e67e22; color:#fff; padding:0.5rem 1rem; border-radius:6px; text-decoration:none; font-weight:700; }
+        /* Container and sections */
+        .container { max-width:1100px; margin:2rem auto; padding:1rem; }
+        .products h2, .about h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 0.5rem; }
+        .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem; margin-top:1rem; }
+        .card { background:#fff; padding:1rem; border-radius:8px; box-shadow:0 6px 12px rgba(0,0,0,0.06); }
+        .card h3 { margin-top:0; }
+        .price { font-weight:700; color:#2c3e50; margin-top:0.5rem; }
+        .btn { display:inline-block; margin-top:0.75rem; background:#2c3e50; color:#fff; padding:0.4rem 0.8rem; border-radius:6px; text-decoration:none; }
         footer { text-align: center; padding: 2rem; color: #777; font-size: 0.9rem; }
         /* Responsive design for mobile devices */
-        @media (max-width: 600px) { .container { margin: 1rem; padding: 1rem; } }
+        @media (max-width: 600px) { .container { margin: 1rem; padding: 0.5rem; } .nav { flex-direction:column; gap:0.5rem; } }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Power Control Technique</h1>
-        <p>Controling the Electical Power</p>
+        <div class="nav">
+            <a class="logo" href="index.html">Power Control Technique</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact Us</a>
+            </nav>
+        </div>
+        <div class="hero">
+            <h1>Controling the Electrical Power</h1>
+            <p>Reliable power electronics and tailored solutions for industry and home.</p>
+            <a class="cta" href="contact.html">Request a Quote</a>
+        </div>
     </header>
 
     <div class="container">
-        <section class="contact-info">
-            <h2>Contact Details</h2>
-            <div class="contact-item">
-                <strong>📍 Address:</strong> 64, Krishna row house, Sarthana, Gujarat-395013
+        <section class="products">
+            <h2>Our Products</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Industrial Inverter</h3>
+                    <p>High-efficiency inverter with robust design for heavy-load industrial applications.</p>
+                    <div class="price">₹ 12,500</div>
+                    <a class="btn" href="contact.html">Contact Us</a>
+                </article>
+                <article class="card">
+                    <h3>Smart Power Controller</h3>
+                    <p>Advanced controller for precise power regulation and energy savings.</p>
+                    <div class="price">₹ 8,900</div>
+                    <a class="btn" href="contact.html">Contact Us</a>
+                </article>
+                <article class="card">
+                    <h3>DC-DC Converter</h3>
+                    <p>Compact converter with high conversion efficiency for multiple applications.</p>
+                    <div class="price">₹ 5,400</div>
+                    <a class="btn" href="contact.html">Contact Us</a>
+                </article>
             </div>
-            <div class="contact-item">
-                <strong>📧 Email:</strong> powercontroltechnique@gmail.com
-            </div>
-            <div class="contact-item">
-                <strong>📞 Phone:</strong> +91 9727663611
-            </div>
-            <div class="contact-item">
-                <strong>⏰ Hours:</strong> Mon - Sun, 9:00 AM - 5:00 PM
-            </div>
+        </section>
+
+        <section class="about" style="margin-top:2rem;">
+            <h2>About Us</h2>
+            <p>We provide tailored power electronics solutions, installation support, and after-sales service to ensure uninterrupted operation.</p>
         </section>
     </div>
 
     <footer>
-        &copy; 2026 My Test Company. All rights reserved.
+        &copy; 2026 Power Control Technique. All rights reserved. • <a href="contact.html">Contact</a>
     </footer>
 
 </body>
