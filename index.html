@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Power Control Technique - Home</title>
+    <title>Nileshkumar Koladiya | Safety Engineer</title>
     <style>
         /* Modern Minimalist Styling 2026 */
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f9; color: #333; }
         /* Header & Navigation */
-        header { background: linear-gradient(135deg,#2c3e50 0%,#34495e 100%); color: #fff; padding: 2.5rem 1rem; }
+        header { background: linear-gradient(135deg,#243447 0%,#2c3e50 100%); color: #fff; padding: 2.5rem 1rem; }
         .nav { display:flex; align-items:center; justify-content:space-between; max-width:1100px; margin:0 auto; }
         .logo { font-weight:700; font-size:1.25rem; color:#fff; text-decoration:none; }
         nav a { color: #ecf0f1; text-decoration:none; margin-left:1rem; font-weight:600; }
         .hero { text-align:center; padding:2rem 1rem 1rem; }
-        .hero h1 { margin:0; font-size:2rem; }
+        .hero h1 { margin:0; font-size:2.2rem; }
         .hero p { margin:0.5rem 0 1rem; color:#e8eef6; }
         .cta { display:inline-block; background:#e67e22; color:#fff; padding:0.5rem 1rem; border-radius:6px; text-decoration:none; font-weight:700; }
         /* Container and sections */
         .container { max-width:1100px; margin:2rem auto; padding:1rem; }
-        .products h2, .about h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 0.5rem; }
+        .products h2, .about h2, .services h2, .profile h2 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 0.5rem; }
         .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:1rem; margin-top:1rem; }
         .card { background:#fff; padding:1rem; border-radius:8px; box-shadow:0 6px 12px rgba(0,0,0,0.06); }
         .card h3 { margin-top:0; }
         .price { font-weight:700; color:#2c3e50; margin-top:0.5rem; }
         .btn { display:inline-block; margin-top:0.75rem; background:#2c3e50; color:#fff; padding:0.4rem 0.8rem; border-radius:6px; text-decoration:none; }
+        .pill { display:inline-block; background:#eef3f9; color:#2c3e50; padding:0.3rem 0.6rem; border-radius:999px; font-size:0.9rem; margin:0.15rem; }
+        .two-col { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:1rem; }
+        .list-compact { margin:0.5rem 0 0; padding-left:1.2rem; }
+        .list-compact li { margin:0.2rem 0; }
         footer { text-align: center; padding: 2rem; color: #777; font-size: 0.9rem; }
         /* Responsive design for mobile devices */
         @media (max-width: 600px) { .container { margin: 1rem; padding: 0.5rem; } .nav { flex-direction:column; gap:0.5rem; } }
@@ -33,77 +37,153 @@
 
     <header>
         <div class="nav">
-            <a class="logo" href="index.html">Power Control Technique</a>
+            <a class="logo" href="index.html">Nileshkumar Koladiya</a>
             <nav>
-                <a href="index.html">Home</a>
+                <a href="#profile">Profile</a>
                 <a href="#services">Services</a>
-                <a href="contact.html">Contact Us</a>
+                <a href="#experience">Experience</a>
+                <a href="contact.html">Contact</a>
             </nav>
         </div>
         <div class="hero">
-            <h1>Controling the Electrical Power</h1>
-            <p>Reliable power electronics and tailored solutions for industry and home.</p>
-            <a class="cta" href="contact.html">Request a Quote</a>
+            <h1>Safety Engineer for Power Electronics Systems</h1>
+            <p>Functional safety, system engineering, and power conversion expertise across automotive and industrial platforms.</p>
+            <a class="cta" href="contact.html">Book a Technical Consultation</a>
         </div>
     </header>
 
     <div class="container">
-        <section class="products">
-            <h2>Our Products</h2>
+        <section id="profile" class="profile">
+            <h2>Profile</h2>
+            <div class="two-col">
+                <div class="card">
+                    <h3>Nileshkumar Koladiya — Safety & Power Electronics Engineer</h3>
+                    <p>15+ years delivering system engineering, functional safety (ISO 26262), and power electronics development across inverters, DCDC converters, chargers, rectifiers, and BMS for automotive and industrial platforms.</p>
+                    <div>
+                        <span class="pill">Functional Safety (ISO 26262)</span>
+                        <span class="pill">Power Electronics</span>
+                        <span class="pill">System Engineering</span>
+                        <span class="pill">HARA / FMEA / FTA / FMEDA</span>
+                        <span class="pill">Modeling & Control</span>
+                        <span class="pill">Embedded C (TI C2000)</span>
+                    </div>
+                    <p style="margin-top:0.75rem; font-weight:600;">Based in Pune · Serving India and remote clients globally</p>
+                </div>
+                <div class="card">
+                    <h3>Contact</h3>
+                    <p style="margin:0.2rem 0;">Email: <a href="mailto:koladiya.nilesh@gmail.com">koladiya.nilesh@gmail.com</a></p>
+                    <p style="margin:0.2rem 0;">Phone: <a href="tel:+919727663611">+91 9727663611</a></p>
+                    <p style="margin:0.2rem 0;">Location: Pune & Surat, India</p>
+                    <a class="btn" href="contact.html">Request a call</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services" style="margin-top:2rem;">
+            <h2>Technical Services</h2>
             <div class="grid">
                 <article class="card">
-                    <h3>Industrial Inverter</h3>
-                    <p>High-efficiency inverter with robust design for heavy-load industrial applications.</p>
-                    <div class="price">₹ 12,500</div>
-                    <a class="btn" href="contact.html">Contact Us</a>
+                    <h3>Functional Safety</h3>
+                    <p>Item definition, HARA, FSC/FSR, TSC/TSR, safety cases, and audits aligned to ISO 26262 with ASIL-focused validation.</p>
+                    <ul class="list-compact">
+                        <li>Safety architecture and worst-case analysis</li>
+                        <li>FMEA, FTA, FMEDA, DFMEA, DFA</li>
+                        <li>Test case design and review</li>
+                    </ul>
                 </article>
                 <article class="card">
-                    <h3>Smart Power Controller</h3>
-                    <p>Advanced controller for precise power regulation and energy savings.</p>
-                    <div class="price">₹ 8,900</div>
-                    <a class="btn" href="contact.html">Contact Us</a>
+                    <h3>Power Electronics Development</h3>
+                    <p>Architecture, control, and validation for inverters, DCDC converters, chargers, BMS, and rectifiers.</p>
+                    <ul class="list-compact">
+                        <li>Simulation (MATLAB/PSIM) and control algorithms</li>
+                        <li>Component selection per AEC-Q, industrial, MIL</li>
+                        <li>Hardware bring-up and mixed-signal testing</li>
+                    </ul>
                 </article>
                 <article class="card">
-                    <h3>DC-DC Converter</h3>
-                    <p>Compact converter with high conversion efficiency for multiple applications.</p>
-                    <div class="price">₹ 5,400</div>
-                    <a class="btn" href="contact.html">Contact Us</a>
+                    <h3>Embedded Systems</h3>
+                    <p>Firmware design in C for TI C2000 (TMS320F28335/377D/069) covering DSP drivers, control loops, and diagnostics.</p>
+                    <ul class="list-compact">
+                        <li>State machines, mode managers, startup/shutdown</li>
+                        <li>Grid-tie and off-grid inverter control</li>
+                        <li>Validation and test automation reviews</li>
+                    </ul>
                 </article>
+            </div>
+            <div style="margin-top:1rem; text-align:center;">
+                <a class="cta" href="contact.html">Schedule a project discussion</a>
+            </div>
+        </section>
+
+        <section id="experience" class="about" style="margin-top:2rem;">
+            <h2>Recent Roles</h2>
+            <div class="two-col">
+                <div class="card">
+                    <h3>Manager, FEV India (Dec 2021 – Present)</h3>
+                    <ul class="list-compact">
+                        <li>Lead safety requirements and ASPICE-aligned requirement management</li>
+                        <li>Hardware safety architecture evaluation and worst-case analysis</li>
+                        <li>FMEA, FTA, FMEDA, DFMEA ownership; test case and result reviews</li>
+                        <li>Projects: BEV 800V inverter, BMS for BEV, PHEV/MHEV inverter</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Lead Engineer, Eaton India (Nov 2020 – Nov 2021)</h3>
+                    <ul class="list-compact">
+                        <li>System requirements and functional safety for 48V mild hybrid inverter</li>
+                        <li>System architecture, HARA/FSC interpretation to TSC/TSR</li>
+                        <li>State machine and mode manager development; startup/shutdown sequencing</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Assistant Manager, Raychem RPG (Sep 2018 – Oct 2020)</h3>
+                    <ul class="list-compact">
+                        <li>Firmware and control for string inverters, BESS, DVR, bidirectional DCDC</li>
+                        <li>DSP drivers over SPI, multilevel inverter control, schematic design and review</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Sr. Design Engineer, Tata Power SED (Mar 2016 – Sep 2018)</h3>
+                    <ul class="list-compact">
+                        <li>Design and testing of PWM rectifier chargers and DCDC for defense systems</li>
+                        <li>PLM-driven documentation, manufacturing packages, and validation</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Engineer, Hitachi Hi-Rel (Aug 2010 – Oct 2014)</h3>
+                    <ul class="list-compact">
+                        <li>Transformer-less UPS (60–250 kVA), active power sharing, SVPWM/SPWM control</li>
+                        <li>PSIM/MATLAB modeling, DSP28335 implementation, hardware selection</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section class="about" style="margin-top:2rem;">
-            <h2>About Us</h2>
-            <p>We provide tailored power electronics solutions, installation support, and after-sales service to ensure uninterrupted operation.</p>
-        </section>
-
-        <section id="services" class="services" style="margin-top:2rem;">
-            <h2>Our Services</h2>
+            <h2>Tools & Certifications</h2>
             <div class="grid">
                 <article class="card">
-                    <h3>Installation</h3>
-                    <p>Professional installation of inverters, controllers, and converters with safety checks and warranty support.</p>
-                    <a class="btn" href="contact.html">Book Installation</a>
+                    <h3>Safety & Systems</h3>
+                    <p>Medini, DOORS/Jazz, ASPICE-aligned requirement management, safety cases.</p>
                 </article>
                 <article class="card">
-                    <h3>Maintenance</h3>
-                    <p>Regular preventive maintenance plans to maximize uptime and prolong equipment life.</p>
-                    <a class="btn" href="contact.html">Schedule Maintenance</a>
+                    <h3>Design & Simulation</h3>
+                    <p>MATLAB, PSIM, Altium, AutoCAD Electrical, Orcad; control loop compensation.</p>
                 </article>
                 <article class="card">
-                    <h3>Custom Solutions</h3>
-                    <p>Tailor-made power control systems designed to fit your operational requirements and budget.</p>
-                    <a class="btn" href="contact.html">Request Custom Quote</a>
+                    <h3>Embedded & Coding</h3>
+                    <p>Embedded C on TI C2000, CCS IDE; PIC (MPLAB); VB/C++ basics.</p>
                 </article>
-            </div>
-            <div style="margin-top:1rem; text-align:center;">
-                <a class="cta" href="contact.html">Start Our Service Campaign & Book Now</a>
+                <article class="card">
+                    <h3>Certification</h3>
+                    <p>TÜV SÜD Functional Safety Professional (ISO 26262), Advanced Control of Power Electronics Converters & Drives (Nirma University).</p>
+                </article>
             </div>
         </section>
     </div>
 
     <footer>
-        &copy; 2026 Power Control Technique. All rights reserved. • <a href="contact.html">Contact</a>
+        &copy; 2026 Nileshkumar Koladiya. Technical safety and power electronics services. • <a href="contact.html">Contact</a>
     </footer>
 
 </body>
